@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            gap: 50px;
+
+        }
+        
+        .square {
+            width: 200px;
+            height:200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        /* Add different colors to each square */
+        .square:nth-child(4n + 1) {
+            background-color: #c477dac6; /* Blue */
+        }
+
+        .square:nth-child(4n + 2) {
+            background-color: #3c97e7; /* Red */
+        }
+
+        .square:nth-child(4n + 3) {
+            background-color: #eeb045; /* Blue */
+        }
+
+        .square:nth-child(4n) {
+            background-color: #3ce76d; /* Red */
+        }
+
+        /* Hidden number initially */
+        .square span {
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease; /* Change the duration to 0.5 seconds */
+}
+
+/* Show number when hovering over the square */
+.square:hover span {
+    display: block;
+    opacity: 1;
+    transition: opacity 5s ease; /* Change the duration to 0.5 seconds */
+}
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    <!-- Replace the content inside the span with the desired numbers -->
+    <div class="square"><span>….. бичигтэй зохиолчдын анхаарал төвлөрөх чадвар өндөр байдаг.</span></div>
+    <div class="square"><span>…… "графологи" гэсэн нэр томьёог гаргаж, гар бичмэлийг хувийн шинж чанартай холбосон онолыг санал болгосон.</span></div>
+    <div class="square"><span>Шумерийн худалдаачид гүйлгээ танигдахуйц үсгийг хэдэн онд кодчилсон бэ?</span></div>
+    <div class="square"><span>Күнз “Бичиг нь ....... салхинд эргэлддэг хүнээс болгоомжил” гэж хэлсэн байдаг.</span></div>
+
+    <div class="square"><span>Францийн графологийн сургуульд үндсэн зарчим болгон хэрэглэдэг гар бичмэлийн 7 төрлийг зохиосон эрдэмтний нэр ?</span></div>
+    <div class="square"><span>20-р зууны эхээр графологийн судалгааны төв хаанаас хаашаа нүүсэн байдаг вэ?</span></div>
+    <div class="square"><span>12 жилийн 10-дах амьтан юу вэ ?</span></div>
+    <div class="square"><span>Дүүргэж болдоггүй ямар сав байдаг вэ?</span></div>
+
+    <div class="square"><span>Хэдэн онд Европ, Америк, ЗХУ эрүүгийн мөрдөн байцаалт, шүүх эмнэлгийн шинжлэх ухаандаа графологийн аргыг нэвтрүүлсэн байдаг вэ? </span></div>
+    <div class="square"><span>Мак Пулвер гар бичмэлийн босоо, ............, ............. гэсэн гурван хэсэг болгон хуваасан.</span></div>
+    <div class="square"><span>Т.Прейер гэмтсэн өвчтнүүдтэй ажиллаж байхдаа юуг анзаарсан бэ?</span></div>
+    <div class="square"><span>Машин юун дээр явдаг вэ?</span></div>
+    
+</div>
+</body>
+</html>
